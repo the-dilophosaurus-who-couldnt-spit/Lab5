@@ -1,0 +1,47 @@
+<!--
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+Name : lab5_exe_B.html
+Assignment : Lab 5
+Author(s) : Thanishque Harshaa, Alvin Long
+Submission : Feb 14 , 2024
+Description : JS Basics.
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+-->
+
+<!DOCTYPE html >
+<html lang ="en" >
+<head >
+<meta charset ="UTF-8" >
+<meta name ="viewport" content =" width = device-width , initial-scale =1.0" >
+<title > JavaScript String and Variable Exercise </title >
+</head >
+<body >
+    <!-- Content goes here -->
+    <script >
+        //3. Declare Variables
+        let firstName = "Alvin";
+        let lastName = "Long";
+        let age = 87;
+
+        //4. Concatenate Strings
+        let fullName = firstName + " " + lastName ;
+        console.log(fullName);
+
+        //5. Calculate Birth Year
+        let currentYear = new Date ().getFullYear();
+        let birthYear = currentYear - age;
+        console.log(birthYear);
+
+        //6. String Manipulation
+        console.log(fullName.length);
+        console.log(fullName.toUpperCase());
+
+        //7. Template Literals
+        console.log( `Hello, my name is ${fullName} and I am ${age} years old. I was born in ${birthYear}.`);
+
+        //8. Bonus: Conditional Operator
+        let canVote = age > 18 ? true : false;
+        console.log (`I am eligible to vote: ${canVote}`);
+    </script >
+</body >
+</html >
